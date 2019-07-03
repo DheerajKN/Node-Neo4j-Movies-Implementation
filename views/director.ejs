@@ -1,0 +1,18 @@
+<h1>Welcome to Director's Wikipedia</h1>
+<h2>This blog is for Director <%= name%></h2>
+
+<h3>He has directored these movies:</h3>
+<ul>
+  <ul>
+    <%directorInfo.forEach((directInfo)=>{%>
+    <li>
+      <b><a href="<%= endpoint %>/movie/<%= directInfo.movieName%>"><%= directInfo.movieName%></a> acted By:
+      <b>
+        <%directInfo.actorName.forEach((actor,i)=>{%>
+        <a href="<%= endpoint %>/actor/<%= actor%>"><%= actor%></a><%if (directInfo.actorName.length -1 > i) {%>,<%}%>
+        <%})%></b
+      >
+    </li>
+    <%})%>
+  </ul>
+</ul>

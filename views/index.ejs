@@ -1,0 +1,26 @@
+<h1>Movies</h1>
+<ul>
+  <%movies.forEach((movie)=>{%>
+  <li>
+    <a href="<%= endpoint %>/movie/<%= movie.title%>"><%= movie.title%></a>
+  </li>
+  <%})%>
+</ul>
+
+<h1>Actors</h1>
+<ul>
+  <%actors.forEach((actor)=>{%>
+  <li><a href="<%= endpoint %>/actor/<%= actor.name%>"><%= actor.name%></a></li>
+  <%})%>
+</ul>
+
+<h1>Directors</h1>
+<ul>
+  <%directors.forEach((director)=>{%>
+  <li>
+    <a href="<%= endpoint %>/director/<%= director.name%>"
+      ><%= director.name%></a
+    >
+  </li>
+  <%})%>
+</ul>

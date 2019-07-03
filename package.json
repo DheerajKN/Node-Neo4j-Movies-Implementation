@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-neo4j-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "env-cmd .env nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd .env.dev nodemon app.js",
+    "qa": "env-cmd .env.qa nodemon app.js",
+    "demo": "env-cmd .env.demo nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "env-cmd": "^8.0.2",
+    "express": "^4.16.4",
+    "neo4j-driver": "^1.7.3"
+  }
+}

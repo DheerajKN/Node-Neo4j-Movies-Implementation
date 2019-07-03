@@ -1,0 +1,18 @@
+<h1>Welcome to Movie's Wikipedia</h1>
+<h2>This blog is for Movie <%= title%> which was released on <%= year%></h2>
+
+<h3>Some quick info on this movie:</h3>
+<ul>
+  Directed by
+  <b
+    ><a href="<%= endpoint %>/director/<%= directorsList%>"
+      ><%= directorsList%></a
+    ></b
+  >
+  and Acted by <%actorsList.forEach((actor, i)=>{%>
+  <b>
+    <a href="<%= endpoint %>/actor/<%= actor%>"><%= actor%></a><%if
+    (actorsList.length -1 > i) {%>,<%}%>
+  </b>
+  <%})%>
+</ul>
