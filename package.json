@@ -17,7 +17,7 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "env-cmd": "^8.0.2",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "neo4j-driver": "^1.7.3"
   }
 }
